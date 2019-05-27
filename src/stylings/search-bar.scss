@@ -1,0 +1,32 @@
+.nav-link-search {
+    color: #73818f;
+    background-color: transparent !important;
+    border: 0px !important;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.nav-search:hover .search-input{
+    opacity: 1;
+}
+
+.search-input::placeholder {
+    color: #656E86;
+}
+
+.search-input {
+    width: 136px;
+    opacity: 0;
+    float: left;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #b7b7b9;
+    padding: 5px 10px;
+    outline: 0;
+    background: 0 0;
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    line-height: 16px;
+}

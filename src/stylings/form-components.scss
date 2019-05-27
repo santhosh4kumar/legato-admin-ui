@@ -1,0 +1,32 @@
+.btn {
+    display: inline-block !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    border: 1px solid transparent !important;
+    padding: .375rem .75rem !important;
+    font-size: .875rem !important;
+    line-height: 1.5 !important;
+    border-radius: .25rem !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
+
+.form-control {
+    display: block !important;
+    width: 100%;
+    height: calc(2.0625rem + 2px) !important;
+    padding: .375rem .75rem !important;
+    font-size: .875rem !important;
+    line-height: 1.5 !important;
+    color: #5c6873 !important;
+    background-color: #fff !important;
+    background-clip: padding-box !important;
+    border: 1px solid #e4e7ea !important;
+    border-radius: .25rem !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}

@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #23282c;
+    text-align: left;
+    background-color: #e4e5e6;
+}
+
+.app, app-dashboard, app-root {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.flex-row {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}

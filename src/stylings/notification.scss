@@ -1,0 +1,139 @@
+.notification-bar {
+    width: 22rem;
+    right: 10px;
+}
+
+.notification-bar .dropdown-menu-header {
+    border-bottom: 1px solid #E4E5EC;
+}
+
+.notification-bar .dropdown-menu-footer {
+    border-top: 1px solid #E4E5EC;
+}
+
+.dropdown-menu-footer {
+    padding: 0.4rem 0rem 0.3rem 0rem;
+}
+
+.dropdown-menu-footer a.dropdown-item {
+    line-height: 100%;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.dropdown-menu-footer a.dropdown-item:hover, 
+.dropdown-menu-footer a.dropdown-item:focus {
+    background-color: #ffffff !important;
+}
+
+.notification-bar .notification-tag {
+    position: relative;
+    /* top: -28px; */
+    /* right: 20px; */
+}
+
+html body a {
+    color: #1E9FF2;
+}
+
+.notification-text {
+    margin-bottom: .5rem;
+}
+
+.media-list .media .media-left {
+    padding-right: 1rem;
+    float: left;
+}
+
+.notification-bar .media-list .media {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #E4E5EC;
+}
+.notification-bar .media-list .media:last-child {
+    border: none !important;
+}
+
+.media-list .media {
+    margin-top: 0;
+}
+
+.media-list .media:hover {
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+a:hover {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.navbar-dark .navbar-nav li,
+.navbar-light .navbar-nav li,
+.navbar-semi-dark .navbar-nav li,
+.navbar-semi-light .navbar-nav li {
+    line-height: 1;
+}
+
+dl li,
+ol li,
+ul li {
+    line-height: 1.8;
+}
+
+.notification-bar .dropdown-header {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #626E82;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.notification-bar .media-body {
+    color: #626E82;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.notification-bar .media-body .media-heading {
+    color: #626E82;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+ul.notification-bar li.scrollable-container {
+    position: relative;
+}
+
+ul.notification-bar li.media-list {
+    max-height: 18.2rem;
+    /* top: -20px; */
+}
+
+.notification-bar li {
+    line-height: 1;
+}
+
+/*scroll bar*/
+.scrollable-container {
+    overflow: auto !important;
+    -ms-overflow-style: none;
+    touch-action: auto;
+    -ms-touch-action: auto;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #A4A6A7;
+    border-radius: 5px;
+}
+
+.media i {
+    color: #23282c;
+}

@@ -1,0 +1,213 @@
+/*header navigation dropdwon and badge css*/
+
+.navbar-light .navbar-nav .nav-link {
+  color: #73818f;
+}
+
+.navbar-nav button {
+  color: #73818f;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  color: #73818f;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler {
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link>.fa {
+  position: relative;
+  width: 36px;
+  font-size: 15px;
+}
+
+.navbar {
+  padding: .3rem 1rem !important;
+}
+
+.navbar-nav .nav-link>.fa>.badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-nav .nav-link>.fa {
+  line-height: 12px;
+}
+
+.navbar-nav .nav-link>.fa>.badge {
+  top: -10px;
+}
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link>.fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link>.fa>.badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link>.fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link>.fa>.badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link>.fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link>.fa>.badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link>.fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link>.fa>.badge {
+    top: -7px;
+  }
+}
+
+.badge-info .red {
+  -webkit-box-shadow: 0 0 10px #FF4961;
+  box-shadow: 0 0 10px #FF4961;
+}
+
+.badge-up {
+  position: absolute;
+  top: 10px;
+  right: 11px;
+}
+
+.badge-danger {
+  background-color: #FF4961;
+}
+
+.badge {
+  font-weight: 400;
+}
+
+.badge,
+.badge[class*=badge-] a {
+  color: #FFF;
+}
+
+.user-menu {
+  width: 12rem !important;
+}
+
+.dropdown-item {
+  font-weight: 400 !important;
+  color: #4a4b4c !important;
+  padding: 10px 20px !important;
+  font-size: 14px !important;
+}
+
+a.dropdown-user-link {
+  padding: 0rem 1rem;
+  line-height: 23px;
+}
+
+a.dropdown-user-link .user-name {
+  display: inline-block;
+  margin-bottom: .4rem;
+  margin-left: .2rem;
+}
+
+.navbar-nav li {
+  line-height: 1;
+}
+
+a.dropdown-user-link .avatar {
+  margin-right: .5rem;
+  width: 36px;
+}
+
+.avatar {
+  position: relative;
+  width: 30px;
+  white-space: nowrap;
+  border-radius: 1000px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+.avatar img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 1000px;
+}
+
+.sidebar-heading {
+  padding: 0.3rem 1.25rem;
+  font-size: 1.4rem;
+  text-align: center;
+  background: white;
+  color: #0070ff;
+  font-weight: 500;
+  width: 12rem;
+}

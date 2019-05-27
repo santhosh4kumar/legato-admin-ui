@@ -1,0 +1,37 @@
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+.app-footer {
+    align-items: center;
+    padding: 0 1rem;
+    color: #23282c;
+    border-top: 1px solid #c8ced3;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.app-footer {
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px;
+    transition: margin-left .25s, margin-right .25s, width .25s, flex .25s;
+    transition: margin-left .25s, margin-right .25s, width .25s, flex .25s, -ms-flex .25s;
+}
+
+@media (min-width: 992px) {
+    html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .main,
+    html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer,
+    html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main,
+    html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+        margin-left: 200px;
+    }
+}
