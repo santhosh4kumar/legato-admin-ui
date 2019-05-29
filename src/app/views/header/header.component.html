@@ -15,10 +15,14 @@
     <nav class="sidebar">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+          <a class="nav-link" routerLink="dashboard" routerLinkActive="active">
+            <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard<span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i> LMS</a>
+          <a class="nav-link" routerLink="lms" routerLinkActive="active">
+            <i class="fa fa-book" aria-hidden="true"></i> LMS<span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fa fa-info" aria-hidden="true"></i> Help</a>
@@ -134,9 +138,11 @@
       <li class="nav-item">
         <a class="nav-link dropdown-toggle dropdown-user-link" href="#" id="notificationDropDown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-            <span class="mr-1 user-name text-bold-700">John Doe</span>
+            <span class="mr-1 user-name text-bold-700">{{_authService.user.firstName}}</span>
             <span class="avatar avatar-online">
-              <img src="./././assets/images/avatar-s-19.png" alt="avatar">
+              <!-- <img src="./././assets/images/avatar-s-19.png" alt="avatar"> -->
+              <!-- image : {{_authService.user | json}} -->
+              <img [src]="_authService.user.image" alt="avatar">
             </span>
           </a>
         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right hide notification-bar user-menu" id="notificationDropDown">
@@ -145,7 +151,7 @@
             <a class="dropdown-item" href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
             <a class="dropdown-item" href="#"><i class="fa fa-key" aria-hidden="true"></i> Change Password</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+            <a class="dropdown-item" href="#" (click)="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
           </li>
         </ul>
       </li>
