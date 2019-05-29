@@ -1,3 +1,4 @@
+import { AuthenticationService } from './service/authentication.service';
 import { Component } from '@angular/core';
 import {
   trigger,
@@ -14,6 +15,9 @@ import {
 })
 export class AppComponent {
   title = 'legato-admin-ui';
+
+  constructor(private _authService: AuthenticationService) {
+  }
 
   public ngOnInit() {
 
