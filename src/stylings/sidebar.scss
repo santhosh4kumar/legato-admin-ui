@@ -19,9 +19,10 @@ body {
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
   color: white;
-  background: #2f353a;
+  // background: #2f353a;
+  background: #3994ec;
   position: fixed;
-  top: 59px;
+  top: 56px;
   left: 0;
   z-index: 1000;
 }
@@ -79,12 +80,12 @@ body {
 
 .sidebar .nav-link.active {
   color: #fff;
-  background: #3a4248;
+  background: #0e7fec;
 }
 
 .sidebar .nav-link:hover {
   color: #fff;
-  background: #20a8d8;
+  background: #0e7fec;
 }
 
 .sidebar .nav-dropdown.open {
@@ -118,7 +119,7 @@ body {
   width: 1.09375rem;
   margin: 0 .5rem 0 0;
   font-size: .875rem;
-  color: #73818f;
+  color: #eff2f5;
   text-align: center;
 }
 

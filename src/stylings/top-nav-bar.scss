@@ -1,7 +1,7 @@
 /*header navigation dropdwon and badge css*/
 
 .navbar-light .navbar-nav .nav-link {
-  color: #73818f;
+  color: #3994ec !important;
 }
 
 .navbar-nav button {
@@ -10,7 +10,7 @@
 
 .navbar-light .navbar-toggler {
   border: none;
-  color: #73818f;
+  color: #3994ec !important;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -210,4 +210,7 @@ a.dropdown-user-link .avatar {
   color: #0070ff;
   font-weight: 500;
   width: 12rem;
+}
+.sidebar-heading i {
+  color: #0070ff;
 }
