@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     });
 
     // reset login status
-    this.authenticationService.logout();
+    this.authenticationService.clearToken();
 
     // get return url from route parameters or default to '/'
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
@@ -48,14 +48,23 @@ export class LoginComponent implements OnInit {
 
     this.loading = true;
     this.authenticationService.login(this.f.username.value, this.f.password.value)
-      .pipe(first())
-      .subscribe(
+    .pipe(first())
+    .subscribe(
       data => {
-        this.router.navigate([this.returnUrl]);
+        if (data) {
+          this.router.navigate([this.returnUrl]);
+        } else {
+          this.error = 'Bad credentials!';
+        }
       },
       error => {
-        this.error = error;
         this.loading = false;
-      });
+        if(error.status == 0) {
+          this.error = 'Application server may not be running!';
+        } else {
+          this.error = 'Bad credential!';
+        }
+      }
+    );
   }
 }

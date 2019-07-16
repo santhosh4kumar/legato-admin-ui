@@ -1,9 +1,9 @@
 <div class="d-flex" id="wrapper">
   <div class="page-content-wrapper w-100">
-    <app-header *ngIf="_authService.loggedIn"></app-header>
-    <div [class.content-wrapper]="_authService.loggedIn" class="container">
+    <app-header *ngIf="_authService && _authService.token"></app-header>
+    <div [class.content-wrapper]="_authService && _authService.token" class="container">
       <router-outlet></router-outlet>
     </div>
-    <app-footer *ngIf="_authService.loggedIn"></app-footer>
+    <app-footer *ngIf="_authService && _authService.token"></app-footer>
   </div>
 </div>

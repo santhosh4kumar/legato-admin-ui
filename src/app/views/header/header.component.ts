@@ -9,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   collapse: string = 'open';
   menuClosed: boolean = true;
+  profilePic: string = '';
 
   constructor(private _authService: AuthenticationService) {}
 
   ngOnInit() {
+    this.profilePic = this._authService && this._authService.user && this._authService.user.gender == 0 ? 
+      './././assets/images/male.png' : './././assets/images/female.png';
   }
+
   toggleCollapse() {
     this.collapse = this.collapse == 'open' ? 'closed' : 'open';
     this.menuClosed = !this.menuClosed;

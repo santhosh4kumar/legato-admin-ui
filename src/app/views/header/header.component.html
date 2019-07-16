@@ -20,6 +20,11 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" routerLink="users" routerLinkActive="active">
+            <i class="fa fa-users" aria-hidden="true"></i> Manage User<span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" routerLink="lms" routerLinkActive="active">
             <i class="fa fa-book" aria-hidden="true"></i> LMS<span class="sr-only">(current)</span>
           </a>
@@ -137,11 +142,10 @@
       <li class="nav-item">
         <a class="nav-link dropdown-toggle dropdown-user-link" href="#" id="notificationDropDown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-            <span class="mr-1 user-name text-bold-700">{{_authService.user.firstName}}</span>
+            <span class="mr-1 user-name text-bold-700">{{(_authService.user ? _authService.user.firstName : 'Username')}}</span>
             <span class="avatar avatar-online">
-              <!-- <img src="./././assets/images/avatar-s-19.png" alt="avatar"> -->
-              <!-- image : {{_authService.user | json}} -->
-              <img [src]="_authService.user.image" alt="avatar">
+              <!-- <img [src]="profilePic" alt="avatar"> -->
+              <img [src]="(this._authService.user && this._authService.user.gender) == 0 ? ('./././assets/images/male.png') : ('./././assets/images/female.png')" alt="avatar">
             </span>
           </a>
         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right hide notification-bar user-menu" id="notificationDropDown">
