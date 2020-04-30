@@ -28,7 +28,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "glyphicons": "^0.2.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "ng2-toastr": "^4.1.2",
     "ng2-tooltip-directive": "^2.1.8",
     "ngx-bootstrap": "^5.1.0",
